@@ -12,7 +12,7 @@ connectDB();
 app.use(express.json());
 
 
-app.use("/usuarios", RouteUsuarios);
+app.use("/usuarios",RouteUsuarios);
 
 const PORT = ENVIRONMENT.PORT || 3000;
 
