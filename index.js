@@ -3,11 +3,13 @@ dotenv.config();
 import express from "express";
 import ENVIRONMENT from './config/environment.config.js';
 import connectDB from './config/db.config.js';
-import RouteUsuarios from './Routes/Route.chat.js';
-import RouteChat from './Routes/Route.chat.js';
+import RouteUsuarios from './Routes/Route.usuarios.js'; 
+import RouteChat from './Routes/Route.chat.js';        
 import RouteMensajes from './Routes/Route.mensaje.js';
+import cors from 'cors';
 
 const app = express();
+app.use(cors());
 
 connectDB();
 

@@ -8,7 +8,7 @@ const router = express.Router();
 
 router.post("/",createUsuario);
 router.get("/", gettodos);  
-router.delete("/:id",deleteUsuario)
+router.delete("/:id", deleteUsuario);
 
 
 export default router;
