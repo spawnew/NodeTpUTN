@@ -1,4 +1,4 @@
-import { Message } from '../models/message.model.js';
+import Message from '../models/Mensajes.models.js';
 
 export const getMessagesByChat = async (req, res, next) => {
     try {

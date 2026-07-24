@@ -1,9 +1,10 @@
+import mongoose from "mongoose"
 import { Schema, model } from 'mongoose';
 
-const chatSchema = new Schema({
-    name: { type: String, required: true },
-    participants: [{ type: Schema.Types.ObjectId, ref: 'User' }]
+const chats_chema = new Schema({
+    nombre: { type: String, required: true },
+    participantes: [{ type: Schema.Types.ObjectId, ref: 'Usuario' }]
 }, );
 
-const Chat = mongoose.model('Chat', chat_schema)
+const Chat = mongoose.model('Chat', chats_chema)
 export default Chat;
