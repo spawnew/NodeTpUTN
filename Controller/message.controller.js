@@ -3,7 +3,7 @@ import Message from '../models/Mensajes.models.js';
 export const getMessagesByChat = async (req, res, next) => {
     try {
         const { chatId } = req.params;
-        const messages = await Message.find({ chatId }).populate('userId', 'username');
+        const messages = await Message.find({ chatId }).populate('userId', 'nombre email')
         
         res.json({
             success: true,
